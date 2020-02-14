@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tutor-Q</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body style="background-image:url(back2.png)">
+    <div class="container">
+        <article>
+            <div class="row" style="margin: 100px auto;">
+                <div class="col-md-4 col-xs-1" id="left-form-box" style="height:auto;">
+                    <h3><b>Join Us</b></h3><br>
+                    <p>Dengan bergabung dengan kami akan ada banyak keuntungan yang akan anda peroleh. Nikmati segala
+                        pelayanan
+                        dan fasilitas yang
+                        akan Anda dapat selama bermitra dengan kami.
+                    </p>
+                </div>
+                <div class="col-md-8 col-xs-8" id="form-box" style="height:auto">
+                    <h3><b>Form Registrasi Tutor</b></h3>
+                    <form action="regtutor.php" method="POST">
+                        <div class="row" id="form-box" style="padding-bottom:0;border-bottom: 0;padding-top: 0">
+                            <div class="form-group col-md-6" style="padding:0px 10px 0px 0px">
+                                <label for="nama">Nama :</label>
+                                <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap"
+                                    name="nama">
+                            </div>
+                            <div class="form-group col-md-6"
+                                style="padding:0px 0px 0px 10px;height: auto;border-bottom: 0;">
+                                <label for="jk">Jenis Kelamin :</label>
+                                <select class="form-control" id="jk" name="jk">
+                                    <option>Laki-laki</option>
+                                    <option>Perempuan</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row" id="form-box" style="padding-bottom:0;border-bottom: 0;padding-top: 0">
+                            <div class="form-group col-md-6" style="padding:0px 10px 0px 0px">
+                                <label for="username">Username :</label>
+                                <input type="text" class="form-control" id="username" placeholder="Username"
+                                    name="username">
+                            </div>
+                            <div class="form-group col-md-6 " style="padding: 0px 0px 0px 10px">
+                                <label for="password">Password :</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password"
+                                    name="password">
+                            </div>
+                        </div>
+                        <div class="row" id="form-box" style="padding-bottom:0;border-bottom: 0;padding-top: 0">
+                            <div class="form-group col-md-6" style="padding:0px 10px 0px 0px">
+                                <label for="email">Email :</label>
+                                <input type="text" class="form-control" id="email" placeholder="Email" name="email">
+                            </div>
+                            <div class="form-group col-md-6"
+                                style="padding:0px 0px 0px 10px;height: auto;border-bottom: 0;">
+                                <label for="jenjang">Jenjang Pengajaran :</label>
+                                <select class="form-control" id="jenjang" name="jenjang">
+                                    <option>Umum</option>
+                                    <option>SMA</option>
+                                    <option>Universitas</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row" id="form-box" style="padding-bottom:0;border-bottom: 0;padding-top: 0">
+                            <div class="form-group col-md-6" style="padding:0px 10px 0px 0px">
+                                <label for="matpel">Mata Pelajaran :</label>
+                                <select class="form-control" id="matpel" name="matpel">
+                                    <option>B.Inggris</option>
+                                    <option>B.Jepang</option>
+                                    <option>Matematika</option>
+                                    <option>Biologi</option>
+                                    <option>Kimia</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6"
+                                style="padding:0px 0px 0px 10px;height: auto;border-bottom: 0;">
+                                <label for="tarif">Tarif per Pertemuan :</label>
+                                <input type="text" class="form-control" id="tarif" name="tarif" placeholder="Tarif">
+                            </div>
+                        </div>
+                        <div class="row" id="form-box" style="padding-bottom:0;border-bottom: 0;padding-top: 0">
+                            <div class="form-group col-md-6" style="padding:0px 10px 0px 0px">
+                                <label for="Kota">Domisili :</label>
+                                <select class="form-control" id="domisili" name="domisili">
+                                    <option>Pilih Kota / Kabupaten</option>
+                                    <option>Kota Bandung</option>
+                                    <option>Kota Cimahi</option>
+                                    <option>Kabupaten Bandung</option>
+                                    <option>Kabupaten Bandung Barat</option>
+                                    <option>Kabupaten Sumedang</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6"
+                                style="padding:0px 0px 0px 10px;height: auto;border-bottom: 0;">
+                                <label for="jk">No.Hp :</label>
+                                <input type="text" class="form-control" id="hp" name="hp" placeholder="No.Hp">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Alamat :</label>
+                            <textarea class="form-control" id="alamat" name="alamat" rows="2"
+                                placeholder="Alamat Lengkap"></textarea>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-4" id="cont-center"></div>
+                            <div class="col-md-4">
+                                <input type="submit" class="btn btn-success col-md-12" value="Daftar">
+                            </div>
+                            <div class="col-md-4" id="cont-center"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </article>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
